@@ -69,11 +69,61 @@
         </div>
 
         <div class="required field">
+          <textarea name="description" th:text="*{description}" placeholder="博客描述..." maxlength="200"></textarea>
+        </div>
+
+        <div class="required field">
+          <div class="ui left labeled input">
+            <label class="ui teal basic label">首图</label>
+            <div class="ui fluid selection dropdown">
+              <input type="hidden" name="firstPictures" th:value="*{firstPictures}==null ? '选择首图引用': *{firstPictures}">
+              <!-- <input type="text" name="firstPictures" th:value="*{firstPictures}" placeholder="首图引用地址"> -->
+              <div class="default text">选择首图引用
+                <img class="ui medium rounded image" src="*{firstPictures}">
+              </div>
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <div class="item" data-value="/images/picsum.com/0-Alejandro-Escamilla.jpg">
+                  <img class="ui medium rounded image" src="/images/picsum.com/0-Alejandro-Escamilla.jpg" alt="">Alejandro-Escamilla
+                </div>
+                <div class="item" data-value="/images/picsum.com/30-Shyamanta-Baruah.jpg">
+                  <img class="ui medium rounded image" src="/images/picsum.com/30-Shyamanta-Baruah.jpg" alt="">Shyamanta-Baruah
+                </div>
+                <div class="item" data-value="/images/picsum.com/48-Luke-Chesser.jpg">
+                  <img class="ui medium rounded image" src="/images/picsum.com/48-Luke-Chesser.jpg" alt="">Luke-Chesser
+                </div>
+                <div class="item" data-value="/images/picsum.com/60-Vadim-Sherbakov.jpg">
+                  <img class="ui medium rounded image" src="/images/picsum.com/60-Vadim-Sherbakov.jpg" alt="">Vadim-Sherbakov
+                </div>
+                <div class="item" data-value="/images/picsum.com/89-Vectorbeast.jpg">
+                  <img class="ui medium rounded image" src="/images/picsum.com/89-Vectorbeast.jpg" alt="">Vectorbeast
+                </div>
+                <div class="item" data-value="/images/picsum.com/119-Nadir-Balcikli.jpg">
+                  <img class="ui medium rounded image" src="/images/picsum.com/119-Nadir-Balcikli.jpg" alt="">Nadir-Balcikli
+                </div>
+                <div class="item" data-value="/images/picsum.com/180-Galymzhan-Abdugalimov.jpg">
+                  <img class="ui medium rounded image" src="/images/picsum.com/180-Galymzhan-Abdugalimov.jpg" alt="">Galymzhan-Abdugalimov
+                </div>
+                <div class="item" data-value="/images/picsum.com/247-Georgia-Dixon.jpg">
+                  <img class="ui medium rounded image" src="/images/picsum.com/247-Georgia-Dixon.jpg" alt="">Georgia-Dixon
+                </div>
+                <div class="item" data-value="/images/picsum.com/250-Nicola-Perantoni.jpg">
+                  <img class="ui medium rounded image" src="/images/picsum.com/250-Nicola-Perantoni.jpg" alt="">Nicola-Perantoni
+                </div>
+                <div class="item" data-value="/images/picsum.com/381-Nick-West.jpg">
+                  <img class="ui medium rounded image" src="/images/picsum.com/381-Nick-West.jpg" alt="">-Nick-West
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="required field">
           <div id="md-content" style="z-index: 1 !important;">
             <textarea placeholder="博客内容" name="content" style="display: none" th:text="*{content}"></textarea>
           </div>
         </div>
-
+        
         <div class="two fields">
           <div class="required field">
             <div class="ui left labeled action input">
@@ -84,8 +134,8 @@
                 <div class="default text">分类</div>
                 <div class="menu">
                   <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">错误日志</div>
-                  <!--                  <div class="item" data-value="1">错误日志</div>-->
-                  <!--                  <div class="item" data-value="2">开发者手册</div>-->
+                  <!--<div class="item" data-value="1">错误日志</div>-->
+                  <!--<div class="item" data-value="2">开发者手册</div>-->
                 </div>
               </div>
             </div>
@@ -94,31 +144,20 @@
             <div class="ui left labeled action input">
               <label class="ui compact teal basic label">标签</label>
               <div class="ui fluid selection multiple search  dropdown">
-<!--                <input type="hidden" name="tagIds" value="1,2,3">-->
+               <!-- <input type="hidden" name="tagIds" value="1,2,3"> -->
                 <input type="hidden" name="tagIds" th:value="*{tagIds}">
                 <i class="dropdown icon"></i>
                 <div class="default text">标签</div>
                 <div class="menu">
                   <div th:each="tag : ${tags}" class="item" data-value="1" th:data-value="${tag.id}" th:text="${tag.name}">错误日志</div>
-                  <!--                  <div class="item" data-value="1">java</div>-->
-                  <!--                  <div class="item" data-value="2">JavaScript</div>-->
+                  <!-- <div class="item" data-value="1">java</div> -->
+                  <!-- <div class="item" data-value="2">JavaScript</div> -->
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="required field">
-          <div class="ui left labeled input">
-            <label class="ui teal basic label">首图</label>
-            <input type="text" name="firstPictures" th:value="*{firstPictures}" placeholder="首图引用地址">
-          </div>
-        </div>
-
-        <div class="required field">
-          <textarea name="description" th:text="*{description}" placeholder="博客描述..." maxlength="200"></textarea>
-        </div>
-
+        
         <div class="inline fields">
           <div class="field">
             <div class="ui checkbox">
