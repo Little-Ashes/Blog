@@ -22,3 +22,11 @@
 2023-04-01 21:39:02.594  INFO 4688 --- [restartedMain] com.ggl.BlogApplication                  : Started BlogApplication in 3.703 seconds (JVM running for 4.552)
 2023-04-01 21:40:25.488  WARN 4688 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
 2023-04-01 21:40:25.504  WARN 4688 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2023-04-01 22:49:15.459  INFO 3064 --- [main] com.ggl.BlogApplicationTests             : Starting BlogApplicationTests using Java 1.8.0_281 on Little_Ashes with PID 3064 (started by Little_Ashes in D:\IdeaProjects\blog)
+2023-04-01 22:49:15.459  INFO 3064 --- [main] com.ggl.BlogApplicationTests             : The following 1 profile is active: "note"
+2023-04-01 22:49:19.129  WARN 3064 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-01 22:49:19.865  INFO 3064 --- [main] com.ggl.BlogApplicationTests             : Started BlogApplicationTests in 4.685 seconds (JVM running for 5.389)
+2023-04-01 22:59:36.973  INFO 18760 --- [main] com.ggl.BlogApplicationTests             : Starting BlogApplicationTests using Java 1.8.0_281 on Little_Ashes with PID 18760 (started by Little_Ashes in D:\IdeaProjects\blog)
+2023-04-01 22:59:36.974  INFO 18760 --- [main] com.ggl.BlogApplicationTests             : The following 1 profile is active: "note"
+2023-04-01 22:59:40.435  WARN 18760 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-01 22:59:41.130  INFO 18760 --- [main] com.ggl.BlogApplicationTests             : Started BlogApplicationTests in 4.461 seconds (JVM running for 5.049)
