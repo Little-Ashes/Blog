@@ -1,0 +1,4 @@
+2023-02-16 19:36:28.805  INFO 14148 --- [restartedMain] com.ggl.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on Little_Ashes with PID 14148 (D:\IdeaProjects\blog\target\classes started by Little_Ashes in D:\IdeaProjects\blog)
+2023-02-16 19:36:28.805  INFO 14148 --- [restartedMain] com.ggl.BlogApplication                  : The following 1 profile is active: "pro"
+2023-02-16 19:36:34.282  WARN 14148 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-16 19:36:34.628  INFO 14148 --- [restartedMain] com.ggl.BlogApplication                  : Started BlogApplication in 6.154 seconds (JVM running for 10.74)
