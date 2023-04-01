@@ -12,3 +12,13 @@
 2023-04-01 12:37:13.663  INFO 13532 --- [main] com.ggl.BlogApplicationTests             : The following 1 profile is active: "note"
 2023-04-01 12:37:17.056  WARN 13532 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2023-04-01 12:37:17.781  INFO 13532 --- [main] com.ggl.BlogApplicationTests             : Started BlogApplicationTests in 4.391 seconds (JVM running for 5.028)
+2023-04-01 21:38:00.592  INFO 8384 --- [main] com.ggl.BlogApplicationTests             : Starting BlogApplicationTests using Java 1.8.0_281 on Little_Ashes with PID 8384 (started by Little_Ashes in D:\IdeaProjects\blog)
+2023-04-01 21:38:00.607  INFO 8384 --- [main] com.ggl.BlogApplicationTests             : The following 1 profile is active: "note"
+2023-04-01 21:38:19.848  WARN 8384 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-01 21:38:21.201  INFO 8384 --- [main] com.ggl.BlogApplicationTests             : Started BlogApplicationTests in 20.983 seconds (JVM running for 21.814)
+2023-04-01 21:38:59.298  INFO 4688 --- [restartedMain] com.ggl.BlogApplication                  : Starting BlogApplication using Java 1.8.0_281 on Little_Ashes with PID 4688 (D:\IdeaProjects\blog\target\classes started by Little_Ashes in D:\IdeaProjects\blog)
+2023-04-01 21:38:59.298  INFO 4688 --- [restartedMain] com.ggl.BlogApplication                  : The following 1 profile is active: "note"
+2023-04-01 21:39:01.934  WARN 4688 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-01 21:39:02.594  INFO 4688 --- [restartedMain] com.ggl.BlogApplication                  : Started BlogApplication in 3.703 seconds (JVM running for 4.552)
+2023-04-01 21:40:25.488  WARN 4688 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2023-04-01 21:40:25.504  WARN 4688 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
